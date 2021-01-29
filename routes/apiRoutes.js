@@ -1,13 +1,6 @@
 const db = require("../models");
 
 module.exports = function (app) {
-    db.Workout.find({}).then(function (res) {
-        console.log("Checking if db is populated");
-        if (res.length === 0) {
-            console.log("DB is empty");
-            require("./seeders/seed.js");
-        }   
-    });
     //getting workouts
     app.get("/api/workouts", (_req, res) => {
 
