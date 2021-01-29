@@ -5,18 +5,23 @@
   [![GitHub issues](https://img.shields.io/github/issues/dnsghd49/workoutTrackk.svg)](https://GitHub.com/dnsghd49/workoutTrackk/issues/)
   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## Deployed link
+
+https://limitless-eyrie-37825.herokuapp.com/
 
 ## Description
 
 Users can use this application to save users'exercises and they can customize how they want to do the exercise. Application will also provides users workout graph so they can keep tracking their progress through the graph.
+
+## Screenshots
+
+![screenshot]()
 
 ## Table of Contents 
 
 * [Installation](#installation)
 
 * [Usage](#usage)
-
-* [Contributing](#contributing)
 
 * [Tests](#tests)
 
@@ -34,11 +39,6 @@ npm install
 
 To track all the daily workouts through the graphs.
 
-
-  
-## Contributing
-
-.
 
 ## Tests
 
