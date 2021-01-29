@@ -13,9 +13,9 @@ https://limitless-eyrie-37825.herokuapp.com/
 
 Users can use this application to save users'exercises and they can customize how they want to do the exercise. Application will also provides users workout graph so they can keep tracking their progress through the graph.
 
-## Screenshots
+## Screenshot
 
-![screenshot]()
+![Screenshots](https://github.com/dnsghd49/workoutTrackk/blob/main/assets/img/myFile.gif "gif")
 
 ## Table of Contents 
 
@@ -35,11 +35,6 @@ To install necessary dependencies, run the following command:
 npm install
 ```
 
-## Usage
-
-To track all the daily workouts through the graphs.
-
-
 ## Tests
 
 To run tests, run the following command:
@@ -47,6 +42,10 @@ To run tests, run the following command:
 ```
 npm run start
 ```
+
+## Usage
+
+To track all the daily workouts through the graphs.
 
 ## Questions
 
