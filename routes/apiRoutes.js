@@ -1,6 +1,13 @@
 const db = require("../models");
 
 module.exports = function (app) {
+    db.Workout.find({}).then(function (res) {
+        console.log("Checking if db is populated");
+        if (res.length === 0) {
+            console.log("DB is empty");
+            require("./seeders/seed.js");
+        }   
+    });
     //getting workouts
     app.get("/api/workouts", (_req, res) => {
 
@@ -20,6 +27,7 @@ module.exports = function (app) {
         });
     });
 
+// exercise codes
     app.put("/api/workouts/:id", (req, res) => {
 
         db.Workout.findOneAndUpdate(
@@ -36,6 +44,7 @@ module.exports = function (app) {
 
     });
 
+// workout codes
     app.get("/api/workouts/range", (_req, res) => {
 
         db.Workout.find({}).then(dbWorkout => {
