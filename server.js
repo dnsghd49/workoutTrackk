@@ -23,15 +23,15 @@ mongoose.connect(
 
 require("./routes/apiRoutes.js")(app);
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
     res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 
-app.get("/exercise", (req, res) => {
+app.get("/exercise", (_req, res) => {
     res.sendFile(path.join(__dirname + "/public/exercise.html"));
 });
 
-app.get("/stats", (req, res) => {
+app.get("/stats", (_req, res) => {
     res.sendFile(path.join(__dirname + "/public/stats.html"));
 });
 

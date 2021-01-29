@@ -2,7 +2,7 @@ const db = require("../models");
 
 module.exports = function (app) {
     //getting workouts
-    app.get("/api/workouts", (req, res) => {
+    app.get("/api/workouts", (_req, res) => {
 
         db.Workout.find({}).then(dbWorkout => {
             dbWorkout.forEach(workout => {
@@ -36,7 +36,7 @@ module.exports = function (app) {
 
     });
 
-    app.get("/api/workouts/range", (req, res) => {
+    app.get("/api/workouts/range", (_req, res) => {
 
         db.Workout.find({}).then(dbWorkout => {
             console.log("ALL WORKOUTS");
